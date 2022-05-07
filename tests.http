@@ -1,0 +1,41 @@
+### Expected user and pass
+
+POST http://localhost:3000/login
+content-type: application/json
+
+{
+    "user": "admin",
+		"passssss": "wrongpass"
+}
+
+### Invalid user or pass format
+
+POST http://localhost:3000/login
+content-type: application/json
+
+{
+    "user": "admin ' or 1=1;--",
+		"pass": "wrongpass"
+}
+
+
+### Invalid user or password
+
+POST http://localhost:3000/login
+content-type: application/json
+
+{
+    "user": "admin",
+		"pass": "wrongpass"
+}
+
+
+### The happy path
+
+POST http://localhost:3000/login
+content-type: application/json
+
+{
+    "user": "admin",
+		"pass": "goodpass"
+}
