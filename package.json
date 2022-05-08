@@ -1,7 +1,7 @@
 {
   "name": "functional-typescript",
   "version": "1.0.0",
-  "description": "Examples on how to refactor a Typescript applicaton in a functional way",
+  "description": "Examples on how to refactor a Typescript application in a functional way",
   "main": "",
   "scripts": {
     "test": "jest --watch"
