@@ -1,8 +1,8 @@
 {
-  "name": "climbing_the_ivory_tower",
+  "name": "functional-typescript",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Examples on how to refactor a Typescript applicaton in a functional way",
+  "main": "",
   "scripts": {
     "test": "jest --watch"
   },
@@ -10,13 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^17.0.31",
     "express": "^4.18.1",
     "fp-ts": "^2.12.1",
     "sqlite": "^4.1.1",
     "sqlite3": "^5.0.8"
   },
   "devDependencies": {
+    "@types/node": "^17.0.31",
     "@types/express": "^4.17.13",
     "@types/jest": "^27.5.0",
     "jest": "^28.1.0",
