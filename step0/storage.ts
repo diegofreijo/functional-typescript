@@ -5,15 +5,16 @@ import { Database, open } from 'sqlite'
 var db: Database;
 
 export async function openDb(): Promise<void> {
+  console.log("opening db")
   // Open a conection against the database (and create its file if it doesn't exists)
   db = await open({
-    filename: '../db/testing.db',
+    filename: './db/testing.db',
     driver: sqlite3.Database
   })
 
   // Run the DB migrations, if there are any to run
   await db.migrate({
-    migrationsPath: '../db/migrations'
+    migrationsPath: './db/migrations'
   })
 }
 
